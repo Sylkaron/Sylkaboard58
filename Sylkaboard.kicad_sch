@@ -13368,7 +13368,8 @@
 	)
 	(symbol
 		(lib_id "Device:RotaryEncoder_Switch")
-		(at 259.08 107.95 180)
+		(at 259.08 107.95 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13378,7 +13379,7 @@
 		(dnp no)
 		(uuid "63278c2b-a93b-483a-888c-adcc95291369")
 		(property "Reference" "RE1"
-			(at 258.318 105.156 0)
+			(at 258.318 110.744 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13388,7 +13389,7 @@
 			)
 		)
 		(property "Value" "RotaryEncoder_Switch"
-			(at 259.334 114.554 0)
+			(at 259.334 101.346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13398,7 +13399,7 @@
 			)
 		)
 		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
-			(at 262.89 112.014 0)
+			(at 262.89 103.886 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13409,7 +13410,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 259.08 114.554 0)
+			(at 259.08 101.346 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

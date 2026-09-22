@@ -102,11 +102,11 @@
           "Normal, MCU monté sur pin"
         ],
         [
-          "silk_edge_clearance|253250000|176835000|b9885bd1-945e-4695-9977-b8c2485015b7|a941c07d-6064-472a-863f-3962ff6d2e45",
+          "silk_edge_clearance|253250000|152270000|b9885bd1-945e-4695-9977-b8c2485015b7|a941c07d-6064-472a-863f-3962ff6d2e45",
           "volontaire"
         ],
         [
-          "silk_edge_clearance|253250000|185995000|b9885bd1-945e-4695-9977-b8c2485015b7|aca8419b-739e-4873-886d-91b6857ba898",
+          "silk_edge_clearance|253250000|161430000|b9885bd1-945e-4695-9977-b8c2485015b7|aca8419b-739e-4873-886d-91b6857ba898",
           "volontaire"
         ],
         [
@@ -840,7 +840,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "./",
-      "plot": "Fabrications/Drill/",
+      "plot": "Fabrications/Gerber/",
       "specctra_dsn": "",
       "vrml": ""
     },
