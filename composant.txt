@@ -1,0 +1,42 @@
+Left part (master)
+	Controller
+		1 rp2040-zero
+		1 socket
+	Matrix
+		29 switch
+			Kailh deep sea mini tactile (chocV2)
+			Kailh deep sea mini linear (chocV2)
+		29 Hotswap socket chocV2 compatible
+		29 Diode 1N4148		
+	Connector
+		1 4-pin magnetic connector
+		2 4.7kOhm resistor 
+	Add-on
+		1 oled screen
+		1 encoder
+
+Right part (slave)
+	Controller
+		1 rp2040-zero
+		1 socket
+	Matrix
+		29 switch
+			Kailh deep sea mini tactile (chocV2)
+			Kailh deep sea mini linear (chocV2)
+		29 Hotswap socket chocV2 compatible
+		29 Diode 1N4148		
+	Connector
+		1 4-pin magnetic connector
+		2 4.7kOhm resistor 
+	Add-on
+		1 oled screen
+		trackball
+			pix
+
+
+Cable
+	4 cables
+	2 4-pin magnetic connector
+	
+
+Total

@@ -1,0 +1,454 @@
+meta:
+  engine: 4.1.0
+
+units:
+  # Switch dimensions
+  sw_supp: 14.05
+  sw_side: 15
+  sw_plate_space: 1.6
+  sw_bts: 2
+  # Plate width
+  pw: 1.5
+  # Rotary encoder dimensions
+  ec_side: 14
+  ec_r: 10
+  ec_d: 2ec_r
+  # Screen dimension
+  sc_long: 38
+  sc_large: 12
+  sc_high: 6
+  # Key Spacing Variables
+  kx: u
+  ky: u
+  # Padding Variables
+  px: kx + 2
+  py: ky + 2
+
+points:
+  zones:
+    matrix:
+      # Fix placement on KiCAS Sheet
+      anchor:
+        shift: [100, -100]
+        rotate: 20
+      key:
+        tags: [matrix]
+        padding: ky
+        spread: kx
+      columns:
+        outer:
+          key:
+            column_net: P29
+        pinky:
+          key:
+            stagger: 0
+            column_net: P28
+        ring:
+          key:
+            stagger: 12
+            column_net: P27
+        middle:
+          key:
+            stagger: 5
+            column_net: P26
+        index:
+          key:
+            stagger: -7
+            column_net: P15
+        inner:
+          key:
+            stagger: 0
+            column_net: P14
+      rows:
+        bottom:
+           row_net: P6
+        home:
+          row_net: P5
+        top:
+          row_net: P4
+        num:
+          row_net: P3
+
+    thumb:
+      key:
+        tags: [thumb]
+        spread: 1.1kx
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [-2.8kx,-1.05ky]
+      rows:
+        cluster:
+          row_net: P7
+          rotate: 0
+      columns:
+        gui:
+          key:
+            column_net: P29
+        symbol:
+          key:
+            column_net: P28
+        layer:
+          key:
+            stagger: -0.1kx
+            splay: -10
+            column_net: P27
+        space:
+          key:
+            stagger: -0.1kx
+            splay: -10
+            column_net: P26
+        extra:
+          key:
+            stagger: -0.1ky
+            spread: 1.1kx
+            splay: -10
+            column_net: P15
+
+    encoder:
+      key:
+        tags: [encoder]
+        spread: ec_d
+        width: ec_d
+        column_net: P14
+        row_net: P7
+
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [1.125px, 0.25py]
+  rotate: -20
+
+
+outlines:
+  raw:
+    - what: rectangle
+      where: true
+      size: [px, py]
+
+  # Screen case support
+  screen_hole:
+    - what: rectangle
+      where:
+        ref: matrix_inner_top
+        shift: [1.125px, 0.275py]
+      size: [sc_large + 2, sc_long + 2]
+  screen_padding:
+    - what: rectangle
+      where:
+        ref: matrix_inner_top
+        shift: [1.125px, 0.275py]
+      size: [sc_large + 4, sc_long + 4]
+  screen_support:
+    - name: screen_padding
+    - operation: subtract
+      name: screen_hole
+
+  switch_holes:
+    - what: rectangle
+      where: [matrix, thumb, thumb_bonus]
+      size: [sw_supp, sw_supp]
+    - what: rectangle
+      where: [encoder]
+      size: [ec_side, ec_side]
+    # - what: circle
+    #   where: [encoder]
+    #   radius: ec_r
+
+  holes:
+    - name: switch_holes
+    - operation: stack
+      name: screen_hole
+
+  # Board dimensions
+  lboard:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: thumb_extra_cluster
+          shift: [0.5px, -0.5py]
+        - ref: thumb_space_cluster
+          shift: [0.5px, -0.5py]
+        - ref: thumb_layer_cluster
+          shift: [0.5px, -0.5py]
+        - ref: thumb_layer_cluster
+          shift: [-0.5px, -0.5py]
+        - ref: thumb_gui_cluster
+          shift: [-0.5px, -0.5py]
+        - ref: matrix_pinky_bottom
+          shift: [0.5px, -0.5py]
+        - ref: matrix_outer_bottom
+          shift: [-0.5px, -0.5py]
+        - ref: matrix_outer_num
+          shift: [-0.5px, 0.5py]
+        - ref: matrix_pinky_num
+          shift: [0.4px, 0.5py]
+        - ref: matrix_ring_num
+          shift: [-0.5px, 0.5py]
+        - ref: matrix_middle_num
+          shift: [-0.5px, 0.5py]
+        - ref: matrix_middle_num
+          shift: [0.5px, 0.5py]
+        - ref: matrix_inner_num
+          shift: [0.5px, 0.5py]
+        - ref: matrix_inner_num
+          shift: [1.75px, 0.5py]
+        - ref: matrix_inner_home
+          shift: [1.75px,-0.5py-0.5ky]
+        - ref: matrix_inner_home
+          shift: [1.75px, -1.75py]
+        - ref: thumb_extra_cluster
+          shift: [0.5px, 0.5py]
+      fillet: 2
+
+  plboard:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: thumb_extra_cluster
+          shift: [0.5px+1, -0.5py-1]
+        - ref: thumb_space_cluster
+          shift: [0.5px+1, -0.5py-1]
+        - ref: thumb_layer_cluster
+          shift: [0.5px+1, -0.5py-1]
+        - ref: thumb_layer_cluster
+          shift: [-0.5px-1, -0.5py-1]
+        - ref: thumb_gui_cluster
+          shift: [-0.5px-1, -0.5py-1]
+        - ref: matrix_pinky_bottom
+          shift: [0.5px-1, -0.5py-1]
+        - ref: matrix_outer_bottom
+          shift: [-0.5px-1, -0.5py-1]
+        - ref: matrix_outer_num
+          shift: [-0.5px-1, 0.5py+1]
+        - ref: matrix_pinky_num
+          shift: [0.4px-1, 0.5py+1]
+        - ref: matrix_ring_num
+          shift: [-0.5px-1, 0.5py+1]
+        - ref: matrix_middle_num
+          shift: [-0.5px-1, 0.5py+1]
+        - ref: matrix_middle_num
+          shift: [0.5px+1, 0.5py+1]
+        - ref: matrix_inner_num
+          shift: [0.5px+1, 0.5py+1]
+        - ref: matrix_inner_num
+          shift: [1.75px+1, 0.5py+1]
+        - ref: matrix_inner_home
+          shift: [1.75px+1,-0.5py-0.5ky-1]
+        - ref: matrix_inner_home
+          shift: [1.75px+1, -1.75py+1]
+        - ref: thumb_extra_cluster
+          shift: [0.5px+1, 0.5py+1]
+      fillet: 2
+
+  bcase:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: thumb_extra_cluster
+          shift: [0.5px+4, -0.5py-4]
+        - ref: thumb_space_cluster
+          shift: [0.5px+4, -0.5py-4]
+        - ref: thumb_layer_cluster
+          shift: [-0.5px-4, -0.5py-4]
+        - ref: thumb_gui_cluster
+          shift: [-0.5px-4, -0.5py-4]
+        - ref: matrix_outer_bottom
+          shift: [-0.5px-4, -1py-4]
+        - ref: matrix_outer_num
+          shift: [-0.5px-4, 0.5py+4]
+        - ref: matrix_ring_num
+          shift: [-0.5px-4, 0.5py+4]
+        - ref: matrix_middle_num
+          shift: [-0.5px-4, 0.5py+4]
+        - ref: matrix_middle_num
+          shift: [0.5px+4, 0.5py+4]
+        - ref: matrix_inner_num
+          shift: [0.5px+4, 0.5py+4]
+        - ref: matrix_inner_num
+          shift: [1.75px+4, 0.5py+4]
+        - ref: matrix_inner_home
+          shift: [1.75px+4,-1py-4]
+        - ref: thumb_extra_cluster
+          shift: [0.5px+4, 0.5py+4]
+      fillet: 2
+
+  ucase:
+    - name: bcase
+    - operation: subtract
+      name: holes
+
+  pcb:
+    - name: lboard
+    - operation: stack
+      name: switch_holes
+
+  all_keyb:
+    - name: holes
+    - operation: stack
+      name: lboard
+    - operation: stack
+      name: plboard
+    - operation: stack
+      name: bcase
+
+  compact_plate:
+    - name: pcb
+    - operation: subtract
+      name: screen_hole
+
+pcbs:
+  pcb:
+    template: kicad8
+    outlines:
+      main:
+        outline: lboard
+    footprints:
+      # Keys
+      choc_hotswap:
+        what: ceoloide/switch_choc_v1_v2
+        where: [matrix, thumb, thumb_bonus]
+        params:
+          include_keycap: true
+          reversible: true
+          hotswap: true
+          include_traces_vias: true
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+
+      # Diodes
+      d_back:
+        what: ceoloide/diode_tht_sod123
+        where: [matrix, thumb]
+        params:
+          side: B
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [8, -2]
+          rotate: 90
+      d_front:
+        what: ceoloide/diode_tht_sod123
+        where: [matrix, thumb]
+        params:
+          side: F
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [-8, -2]
+          rotate: 90
+      d_encoder_back:
+        what: ceoloide/diode_tht_sod123
+        where: [encoder]
+        params:
+          side: B
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -3]
+      d_encoder_front:
+        what: ceoloide/diode_tht_sod123
+        where: [encoder]
+        params:
+          side: F
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -3]
+      # Other
+      encoder:
+        what: ceoloide/rotary_encoder_ec11_ec12
+        where:
+          ref: encoder
+          rotate: 180
+        params:
+          reversible: true
+          S1: "{{colrow}}"
+          S2: "{{column_net}}"
+          A: P9
+          B: P13
+      microcont:
+        what: rp2040_zero
+        params:
+          reversible: true
+          P13: P9
+          P12: P10
+          P11: P11
+          P10: P12
+          P9: P13
+        where:
+          ref: matrix_inner_top
+          shift: [1px, 0.8py]
+          rotate: 0
+      connector:
+        what: ceoloide/trrs_pj320a
+        params:
+          reversible: true
+          symmetric: false
+          TP: V5
+          R1: P10
+          R2: P11
+          SL: GND
+        where:
+          ref: matrix_inner_top
+          shift: [1.5px, -0.05py]
+          rotate: -90
+      #how reversible
+      screen:
+        what: ceoloide/display_ssd1306
+        params:
+          reversible: true
+          VCC: V3
+          SDA: P10
+          SCL: P11
+          GND: GND
+        where:
+          ref: matrix_inner_top
+          shift: [1px, 0.25py]
+
+cases:
+  bottom:
+    - name: bcase
+      extrude: 10
+  _innerWall:
+    - name: plboard
+      extrude: 7
+  key_holes:
+    - name: holes
+      extrude: 2
+  l_screen_base:
+    - name: screen_support
+      extrude: sc_high - sw_bts + 1.5
+      shift: [0, 0, pw - 0.5]
+  r_screen_base:
+    - name: screen_support
+      extrude: sc_high - sw_bts + 1.5
+      shift: [0, 0, -(sc_high - sw_bts) - pw + 0.5]
+
+
+  bcase:
+    - what: case
+      name: bottom
+      operation: add
+    - what: case
+      name: _innerWall
+      operation: subtract
+
+  uplate:
+    - name: ucase
+      extrude: pw
+    - what: case
+      name: l_screen_base
+      operation: add
+
+  l_compact_uplate:
+    - name: compact_plate
+      extrude: pw
+    - what: case
+      name: l_screen_base
+      operation: add
+
+  r_compact_uplate:
+    - name: compact_plate
+      extrude: pw
+    - what: case
+      name: r_screen_base
+      operation: add

@@ -1,0 +1,221 @@
+meta:
+  engine: 4.1.0
+units:
+  # Switch Spacing Variables
+  kx: u
+  ky: u
+  # Padding Variables
+  px: kx + 4
+  py: ky + 4
+  # Encoder knob
+  d: 20
+points:
+  zones:
+    matrix:
+      # Fix placement on KiCAS Sheet
+      anchor:
+        shift: [100, -100]
+      key:
+        tags: [matrix]
+        padding: ky
+        spread: kx
+      columns:
+        outer:
+        pinky:
+          key:
+            stagger: 5
+        ring:
+          key:
+            stagger: 13
+        middle:
+          key:
+            stagger: 7
+        index:
+          key:
+            stagger: -7
+        inner:
+          key:
+            stagger: -4
+      rows:
+        bottom:
+        home:
+        top:
+        num:
+    thumb:
+      key:
+        tags: [thumb]
+        spread: 1kx
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [-3kx,-ky]
+      rows:
+        cluster:
+          rotate: 0
+      columns:
+        gui:
+        symbol:
+          key:
+            stagger: 0
+            splay: -5
+        layer:
+          key:
+            stagger: 0
+            splay: -5
+            spread: 1.1kx
+        space:
+          key:
+            width: 1.5kx
+            stagger: 
+            splay: -15 + 90
+            spread: 1.2kx
+        extra:
+          key:
+            stagger: -1.1kx
+            spread: -0.15ky
+            splay: -8
+    encoder:
+      key:
+        tags: [encoder]
+        width: d
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [px, 0.5ky]
+      columns:
+        in:
+  rotate: -20
+  mirror: &mirror
+    ref: matrix_inner_num
+    distance: 4.25kx
+
+outlines:
+  raw:
+    - what: rectangle
+      where: true
+      size: [px, py]
+  keys:
+    - what: rectangle
+      where: true
+      size: [kx-0.5, ky-0.5]
+  lboard:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: thumb_extra_cluster
+          shift: [-0.5px, 0.5py]
+        - ref: thumb_gui_cluster
+          shift: [-0.5px, -0.5py]
+        - ref: matrix_outer_bottom
+          shift: [-0.5px, -0.5py]
+        - ref: matrix_outer_num
+          shift: [-0.5px, 0.5py]
+        - ref: matrix_ring_num
+          shift: [-0.5px, 0.5py]
+        - ref: matrix_middle_num
+          shift: [-0.5px, 0.5py]
+        - ref: matrix_middle_num
+          shift: [0.5px, 0.5py]
+        - ref: matrix_inner_num
+          shift: [0.5px, 0.5py]
+        - ref: matrix_inner_num
+          shift: [1.6px, 0.5py]
+        - ref: matrix_inner_home
+          shift: [1.6px,-0.5py-0.5ky]
+        - ref: thumb_extra_cluster
+          shift: [0.5px, -0.5py]
+        - ref: thumb_extra_cluster
+          shift: [-0.5px, -0.5py]
+      fillet: 2
+  rboard:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: mirror_thumb_extra_cluster
+          shift: [-0.5px, 0.5py]
+        - ref: mirror_thumb_gui_cluster
+          shift: [-0.5px, -0.5py]
+        - ref: mirror_matrix_outer_bottom
+          shift: [-0.5px, -0.5py]
+        - ref: mirror_matrix_outer_num
+          shift: [-0.5px, 0.5py]
+        - ref: mirror_matrix_ring_num
+          shift: [-0.5px, 0.5py]
+        - ref: mirror_matrix_middle_num
+          shift: [-0.5px, 0.5py]
+        - ref: mirror_matrix_middle_num
+          shift: [0.5px, 0.5py]
+        - ref: mirror_matrix_inner_num
+          shift: [0.5px, 0.5py]
+        - ref: mirror_matrix_inner_num
+          shift: [1.6px, 0.5py]
+        - ref: mirror_matrix_inner_home
+          shift: [1.6px,-0.5py-0.5ky]
+        - ref: mirror_thumb_extra_cluster
+          shift: [0.5px, -0.5py]
+        - ref: mirror_thumb_extra_cluster
+          shift: [-0.5px, -0.5py]
+      fillet: 2
+  lrboard:
+    - name: lboard
+    - operation: stack
+      name: rboard
+  combo:
+    - name: lrboard
+    - operation: subtract
+      name: keys
+pcbs:
+  pcb:
+    template: kicad8
+    outlines:
+      main:
+        outline: lrboard
+    footprints:
+      choc_hotswap:
+        what: ceoloide/switch_choc_v1_v2
+        where: [matrix, thumb]
+        params:
+          hotswap: true
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+      diode:
+        what: diode
+        where: [matrix, thumb]
+        params: 
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -5]
+      encoder:
+        what: ceoloide/rotary_encoder_ec11_ec12
+        where: [encoder]
+        params:
+      microcont:
+        what: promicro
+        params:
+          orientation: "down"
+        where:
+          ref: matrix_inner_top
+          shift: [1px,0.4py]
+          rotate: -90
+      screen:
+        what: ceoloide/display_ssd1306
+        params:
+            side: "F"
+            SDA: P2
+            SCL: P3
+        where:
+          ref: matrix_inner_top
+          shift: [1px, 0.5py]
+      connector:
+        what: trrs
+        params:
+          A: GND
+          B: GND
+          C: P21
+          D: VCC
+          reverse: true
+          symmetric: true
+        where: 
+          ref: matrix_inner_top
+          shift: [1.5px,-0.6py]
+          rotate: -90
+cases:
