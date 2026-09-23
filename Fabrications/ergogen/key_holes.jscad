@@ -1,5 +1,5 @@
 function holes_extrude_2_outline_fn(){
-    return new CSG.Path2D([[171.3922477,-119.9212765],[185.3922477,-119.9212765]]).appendPoint([185.3922477,-105.9212765]).appendPoint([171.3922477,-105.9212765]).appendPoint([171.3922477,-119.9212765]).close().innerToCAG()
+    return new CSG.Path2D([[171.3922477,-121.4962764],[185.3922477,-121.4962764]]).appendPoint([185.3922477,-107.4962764]).appendPoint([171.3922477,-107.4962764]).appendPoint([171.3922477,-121.4962764]).close().innerToCAG()
 .union(
     new CSG.Path2D([[135.2290947,-145.7196724],[149.0656436,-148.1594293]]).appendPoint([151.5054005,-134.3228804]).appendPoint([137.6688516,-131.8831235]).appendPoint([135.2290947,-145.7196724]).close().innerToCAG()
 ).union(
