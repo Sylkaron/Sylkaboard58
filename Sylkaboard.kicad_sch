@@ -8348,7 +8348,7 @@
 		)
 		(uuid "16e5dbc9-aeb2-4146-93e4-63913f4ea45d")
 	)
-	(label "encA"
+	(label "encB"
 		(at 270.51 110.49 0)
 		(effects
 			(font
@@ -8508,7 +8508,7 @@
 		)
 		(uuid "3e4ee026-520e-486f-be54-9957c363fc59")
 	)
-	(label "encB"
+	(label "encA"
 		(at 270.51 105.41 0)
 		(effects
 			(font
@@ -8948,7 +8948,7 @@
 		)
 		(uuid "c8abbe8d-caf6-4c08-b181-632703b0d8bd")
 	)
-	(label "encA"
+	(label "encB"
 		(at 62.23 38.1 0)
 		(effects
 			(font
@@ -9008,7 +9008,7 @@
 		)
 		(uuid "cf0288d3-bc67-4e2b-b070-a7733ba439b7")
 	)
-	(label "encB"
+	(label "encA"
 		(at 21.59 53.34 180)
 		(effects
 			(font
