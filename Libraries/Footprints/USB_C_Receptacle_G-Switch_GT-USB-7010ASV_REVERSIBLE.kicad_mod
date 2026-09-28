@@ -6,9 +6,9 @@
 	(descr "USB Type C, right-angle, SMT, https://datasheet.lcsc.com/lcsc/2204071530_G-Switch-GT-USB-7010ASV_C2988369.pdf")
 	(tags "USB C Type-C Receptacle SMD")
 	(property "Reference" "J2"
-		(at -5.6 -0.9 90)
+		(at -6.22 -0.28 90)
 		(layer "F.SilkS")
-		(uuid "c25c05d1-9d6c-43e3-8539-4a96eca68cbf")
+		(uuid "53849e9e-a7ab-471c-bd5d-68eeab43b9e7")
 		(effects
 			(font
 				(size 1 1)
@@ -20,7 +20,7 @@
 		(at 0 5 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "161accda-5c58-4e9e-a646-44dd5c91692b")
+		(uuid "e3aa8c11-0df1-4224-9268-a6e46facdffc")
 		(effects
 			(font
 				(size 1 1)
@@ -33,7 +33,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "8ab3f09c-e83f-4014-a3cc-551f828f47bb")
+		(uuid "d5bf7bbf-182d-4362-932e-fd04a049649d")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -46,7 +46,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "89fc2e41-7b23-4b5b-912d-39e477f5b084")
+		(uuid "5c93c6a4-abb3-480e-b9d7-b78c9bf3e164")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -110,6 +110,56 @@
 		(uuid "2092e4bc-bf8c-4571-a1f3-62dd0cb9a159")
 	)
 	(fp_line
+		(start -4.591943 0.07106)
+		(end -4.591943 -1.84894)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "820b79e2-5938-48e0-9b77-669a9c880f6d")
+	)
+	(fp_line
+		(start -4.591943 2.08106)
+		(end -4.591943 3.78606)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "8f46fb7c-54f0-42c0-a2cd-7f305f22b754")
+	)
+	(fp_line
+		(start -4.591943 3.78606)
+		(end 4.568057 3.78606)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "2ebd370c-2237-4bcf-b9be-22078596d37c")
+	)
+	(fp_line
+		(start 4.568057 -1.84894)
+		(end 4.568057 0.07106)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "1fa193fa-c13b-4b9b-8e84-84025c59aeaa")
+	)
+	(fp_line
+		(start 4.568057 3.78606)
+		(end 4.568057 2.08106)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "f6a07c08-dcba-4cb2-a9fd-e0d6655e85ad")
+	)
+	(fp_line
 		(start -5.32 -4.85)
 		(end 5.32 -4.85)
 		(stroke
@@ -150,6 +200,46 @@
 		(uuid "7fd6c669-5f0c-4dce-a7bc-1e26bdda4e23")
 	)
 	(fp_line
+		(start -4.481943 3.67606)
+		(end -4.481943 -3.67394)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "B.Fab")
+		(uuid "b74e6188-dd00-4f67-a495-28b4b2cf09b4")
+	)
+	(fp_line
+		(start 4.458057 -3.67394)
+		(end -4.481943 -3.67394)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "B.Fab")
+		(uuid "d507642b-00ef-46ba-a4e6-9d9bb146b4f5")
+	)
+	(fp_line
+		(start 4.458057 -3.67394)
+		(end 4.458057 3.67606)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "B.Fab")
+		(uuid "b5e47c41-510d-4d54-a662-ba1553216418")
+	)
+	(fp_line
+		(start 4.458057 3.67606)
+		(end -4.481943 3.67606)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "B.Fab")
+		(uuid "6af0b21b-add8-4a56-9b84-8a22a8a6fadb")
+	)
+	(fp_line
 		(start -4.47 -3.675)
 		(end -4.47 3.675)
 		(stroke
@@ -188,6 +278,18 @@
 		)
 		(layer "F.Fab")
 		(uuid "d0e64fdb-ad22-45d2-90bc-421950f86382")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.011943 0.00106 0)
+		(layer "B.Fab")
+		(uuid "ca468743-1ee8-41a5-9912-e4a268bb83e2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
