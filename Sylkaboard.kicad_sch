@@ -8,7 +8,7 @@
 		(title "Sylkaboard")
 		(date "2026-09-18")
 		(rev "v1.2")
-		(company "Pablo Berton")
+		(company "Sylkaron")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x04_Pin"
