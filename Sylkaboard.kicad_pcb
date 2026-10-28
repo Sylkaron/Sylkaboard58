@@ -1851,18 +1851,18 @@
 		)
 		(model "${KICAD10_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Kailh_Choc_V1.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 -0.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 		(model "${KIPRJMOD}/Libraries/3D/Choc_Stem_Choc_Size_Saddle_Tilted.step"
 			(offset
-				(xyz 0 0 4.5)
+				(xyz 0 0 4)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -7775,13 +7775,13 @@
 		)
 		(model "${KICAD10_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Kailh_Choc_V1.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 -0.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -12284,18 +12284,18 @@
 		)
 		(model "${KICAD10_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Kailh_Choc_V1.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 -0.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 		(model "${KIPRJMOD}/Libraries/3D/Choc_Stem_Choc_Size_Saddle_Tilted.step"
 			(offset
-				(xyz 0 0 5)
+				(xyz 0 0 4)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -19501,18 +19501,18 @@
 		)
 		(model "${KICAD10_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Kailh_Choc_V1.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 -0.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 		(model "${KIPRJMOD}/Libraries/3D/Choc_Stem_Choc_Size_Saddle_Tilted.step"
 			(offset
-				(xyz 0 0 4.5)
+				(xyz 0 0 4)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -26907,18 +26907,18 @@
 		)
 		(model "${KICAD10_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Kailh_Choc_V1.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 -0.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 		(model "${KIPRJMOD}/Libraries/3D/Choc_Stem_Choc_Size_Saddle_Tilted.step"
 			(offset
-				(xyz 0 0 4.5)
+				(xyz 0 0 4)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -28967,13 +28967,13 @@
 		)
 		(model "${KICAD10_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Kailh_Choc_V1.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 -0.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -30692,18 +30692,18 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 		(model "${KICAD10_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Kailh_Choc_V1.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 -0.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -34995,18 +34995,18 @@
 		)
 		(model "${KICAD10_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Kailh_Choc_V1.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 -0.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 		(model "${KIPRJMOD}/Libraries/3D/Choc_Stem_Choc_Size_Saddle_Tilted.step"
 			(offset
-				(xyz 0 0 4.5)
+				(xyz 0 0 4)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -37054,18 +37054,18 @@
 		)
 		(model "${KICAD10_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Kailh_Choc_V1.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 -0.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 		(model "${KIPRJMOD}/Libraries/3D/Choc_Stem_Choc_Size_Saddle.step"
 			(offset
-				(xyz 0 0 4.5)
+				(xyz 0 0 4)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -37340,7 +37340,7 @@
 		)
 		(model "${KIPRJMOD}/Libraries/3D/OLED_0.91in_128x32_SSD1306_I2C.step"
 			(offset
-				(xyz 0 -7.5 6)
+				(xyz 0 -7.75 5)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -41266,18 +41266,18 @@
 		)
 		(model "${KICAD10_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Kailh_Choc_V1.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 -0.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 		(model "${KIPRJMOD}/Libraries/3D/Choc_Stem_Choc_Size_Saddle_Homing.step"
 			(offset
-				(xyz 0 0 4.5)
+				(xyz 0 0 4)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -43827,7 +43827,7 @@
 		)
 		(fp_line
 			(start 6.475 -6.075)
-			(end 6.781 -6.014002)
+			(end 6.781 -6.014003)
 			(stroke
 				(width 0.1)
 				(type solid)
@@ -43856,7 +43856,7 @@
 			(uuid "e98ebe7f-f430-4e7a-b58f-7554bb3401e5")
 		)
 		(fp_line
-			(start 6.781 -6.014002)
+			(start 6.781 -6.014003)
 			(end 7.041 -5.841)
 			(stroke
 				(width 0.1)
@@ -44386,13 +44386,13 @@
 		)
 		(model "${KICAD10_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Kailh_Choc_V1.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 -0.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -56409,13 +56409,13 @@
 		)
 		(model "${KICAD10_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Kailh_Choc_V1.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 -0.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -63383,18 +63383,18 @@
 		)
 		(model "${KICAD10_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Kailh_Choc_V1.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 -0.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 		(model "${KIPRJMOD}/Libraries/3D/Choc_Stem_Choc_Size_Saddle.step"
 			(offset
-				(xyz 0 0 4.5)
+				(xyz 0 0 4)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -73428,7 +73428,7 @@
 		)
 		(model "${KIPRJMOD}/Libraries/3D/RP2040-ZERO.step"
 			(offset
-				(xyz 0 0 -7)
+				(xyz 0 0 -6.5)
 			)
 			(scale
 				(xyz 1 1 1)
