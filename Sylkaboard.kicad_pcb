@@ -95,8 +95,8 @@
 		(capping no)
 		(filling no)
 		(pcbplotparams
-			(layerselection 0x00000000_00000000_55555555_5755f5ff)
-			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_55555554)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_0200808c)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes yes)
@@ -124,11 +124,11 @@
 			(sketchdnponfab yes)
 			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
-			(outputformat 1)
+			(outputformat 5)
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "Fabrications/Drill/")
+			(outputdirectory "Fabrications/SVG/")
 		)
 	)
 	(footprint "Footprints:Kail_Hotswap_Reversible_V1V2"
@@ -43827,7 +43827,7 @@
 		)
 		(fp_line
 			(start 6.475 -6.075)
-			(end 6.781 -6.014001)
+			(end 6.781 -6.014002)
 			(stroke
 				(width 0.1)
 				(type solid)
@@ -43856,7 +43856,7 @@
 			(uuid "e98ebe7f-f430-4e7a-b58f-7554bb3401e5")
 		)
 		(fp_line
-			(start 6.781 -6.014001)
+			(start 6.781 -6.014002)
 			(end 7.041 -5.841)
 			(stroke
 				(width 0.1)
@@ -43887,7 +43887,7 @@
 		)
 		(fp_line
 			(start 7.214 -5.581)
-			(end 7.275001 -5.275)
+			(end 7.275002 -5.275)
 			(stroke
 				(width 0.1)
 				(type solid)
