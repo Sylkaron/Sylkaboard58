@@ -9829,7 +9829,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 187.96 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -9988,7 +9988,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 148.59 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -10068,7 +10068,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 167.64 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -10989,7 +10989,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 187.96 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -11277,7 +11277,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 148.59 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -12328,7 +12328,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 205.74 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -12849,7 +12849,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 148.59 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -13673,7 +13673,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 224.79 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -13753,7 +13753,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 205.74 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -13912,7 +13912,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 224.79 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -13992,7 +13992,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 242.57 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -14072,7 +14072,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 187.96 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -14229,7 +14229,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 148.59 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -15045,7 +15045,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 242.57 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -15618,7 +15618,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 205.74 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -16236,7 +16236,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 167.64 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -16477,7 +16477,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 242.57 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -16869,7 +16869,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 205.74 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -16949,7 +16949,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 224.79 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -17029,7 +17029,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 205.74 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -17378,7 +17378,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 187.96 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -17562,7 +17562,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 167.64 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -18950,7 +18950,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 167.64 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -19653,7 +19653,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 224.79 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -19733,7 +19733,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 187.96 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -19813,7 +19813,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 242.57 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -20162,7 +20162,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 167.64 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -20715,7 +20715,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 148.59 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -20795,7 +20795,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:Kailh_socket_PG1350_reversible"
+		(property "Footprint" "Footprints:Kail_Hotswap_Reversible_V1V2"
 			(at 224.79 50.8 0)
 			(hide yes)
 			(show_name no)
