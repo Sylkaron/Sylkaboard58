@@ -624,7 +624,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "./",
-      "plot": "Fabrications/SVG/",
+      "plot": "Fabrications/Gerber/",
       "specctra_dsn": "",
       "vrml": ""
     },
